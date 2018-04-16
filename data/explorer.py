@@ -20,5 +20,9 @@ british_meals = national_origins['United Kingdom']
 print(chinese_meals, 'of Chinese origin.')
 print(british_meals, 'of British origin.')
 
+for food in foods:
+	for country in food['countries_en'].split(','):
+		if country in ['China','Hong Kong','Singapore']:
+			print(food)
 
 #print(national_origins)
