@@ -1,0 +1,12 @@
+[
+{
+	"name_en":"Fish and Chips",
+	"name_cn":"炸鱼加土豆条",
+	"country":"UK",
+	"region":"England",
+	"image_url":"http://www.b4bguide.com/wp-content/uploads/2015/10/Traditional-fish-and-chips-cut.jpg",
+	"ingredients":["Fish","Chips","Batter"],
+	"flavours":["pungent"],
+	"chance_like":0.0
+}
+]

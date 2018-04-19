@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Tour Of Britain{% endblock %}
+
+{% block page_content %}
+
+	<h1>{{ food['name_en'] }} - {{ food['name_cn'] }}</h1>
+	<p>Insert image here, url is {{ food['image_url'] }}</p>
+	
+	<h2>From: {{ food['region']}}, {{ food['country']}}</h2>
+
+	<p>Could add links to ingredients</p>
+	<div class="table-responsive">
+		<table class="table table-striped table sm">
+			<thead>
+				<tr>
+					<th><strong>Ingredients</strong></th>
+				</tr>
+			</thead>
+
+			{% for ingredient in food['ingredients'] %}
+				<tr>
+					<td>{{ingredient}}</td>
+
+				</tr>
+			{% endfor %}
+		</table>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-striped table sm">
+			<thead>
+				<tr>
+					<th><strong>Flavours</strong></th>
+				</tr>
+			</thead>
+
+			{% for flavour in food['flavours'] %}
+				<tr>
+					<td>{{flavour}}</td>
+
+				</tr>
+			{% endfor %}
+		</table>
+	</div>
+
+{% endblock %}

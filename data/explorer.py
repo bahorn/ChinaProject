@@ -1,9 +1,24 @@
-#Full Chinglish
 import json
 
 #English Name, Chinese Name, Image, price?, flvours?
 
+#GET EXPLORER WORKING, RENDER JSON
 
+uk_name = 'United Kingdom'
+cn_name = 'China'
+
+def get_data(filename):
+    with open(filename) as json_file:
+        foods = json.load(json_file)
+    return foods
+
+foods = get_data('bearsdata.json')
+
+#print(foods[0])
+
+
+'''
+Code for exploring old dataset
 with open('data.json') as json_file:
     foods = json.load(json_file)
 
@@ -52,3 +67,5 @@ print(len(british_foods), 'of British origin.')
 
 for i in range(50):
     print(british_foods[i]['product_name'])
+
+'''
