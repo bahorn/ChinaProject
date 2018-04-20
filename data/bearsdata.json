@@ -8,5 +8,15 @@
 	"ingredients":["Fish","Chips","Batter"],
 	"flavours":["pungent"],
 	"chance_like":0.0
+},
+{
+	"name_en":"Bok Choy",
+	"name_cn":"上海青",
+	"country":"China",
+	"region":"Guangdong",
+	"image_url":"http://ichef.bbci.co.uk/food/ic/food_16x9_608/foods/b/bok_choi_16x9.jpg",
+	"ingredients":["Bok Choy","Oil","Salt"],
+	"flavours":["bitter","healthy"],
+	"chance_like":0.0
 }
 ]
